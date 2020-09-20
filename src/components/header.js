@@ -22,31 +22,34 @@ const NavLink = styled(Link)`
 `;
 
 const Header = () => (
-    <header
-        css={css`
+  <header
+    css={css`
       background: #eee;
       border-bottom: 1px solid #ddd;
       display: flex;
       justify-content: space-between;
       padding: 0.5rem calc((100vw - 550px - 0.5rem) / 2);
     `}
-    >
-        <NavLink to="/" fontWeight="bold">
-            FEM Workshop
+  >
+    <NavLink to="/" fontWeight="bold">
+      FEM Workshop
     </NavLink>
-        <nav
-            css={css`
+    <nav
+      css={css`
         margin-top: 0;
       `}
-        >
-            <NavLink to="/" activeClassName="current-page">
-                Home
+    >
+      <NavLink to="/" activeClassName="current-page">
+        Home
       </NavLink>
-            <NavLink to="/about/" activeClassName="current-page">
-                About
+      <NavLink to="/contact/" activeClassName="current-page">
+        contact Us
       </NavLink>
-        </nav>
-    </header>
+      <NavLink to="/about/" activeClassName="current-page">
+        About
+      </NavLink>
+    </nav>
+  </header>
 );
 
 export default Header;
