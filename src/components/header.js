@@ -43,7 +43,7 @@ const Header = () => (
         Home
       </NavLink>
       <NavLink to="/contact/" activeClassName="current-page">
-        contact Us
+        Contact Us
       </NavLink>
       <NavLink to="/about/" activeClassName="current-page">
         About
