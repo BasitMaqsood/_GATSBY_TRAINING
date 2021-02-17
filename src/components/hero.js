@@ -7,7 +7,7 @@ const ImageBackground = styled(BackgroundImage)`
   background-position: top 20% center;
   background-size: cover;
   height: 50vh;
-
+  
   /* override the default margin for sibling elements  */
   + * {
     margin-top: 0;
@@ -40,7 +40,7 @@ const TextBox = styled('div')`
 `;
 
 const Hero = () => {
-    const { image } = useStaticQuery(graphql`
+  const { image } = useStaticQuery(graphql`
     query {
       image: file(relativePath: { eq: "hero-image.jpg" }) {
         sharp: childImageSharp {
@@ -52,16 +52,16 @@ const Hero = () => {
     }
   `);
 
-    return (
-        <ImageBackground Tag="section" fluid={image.sharp.fluid} fadeIn="soft">
-            <TextBox>
-                <h1>Frontend Masters + Gatsby &hearts;</h1>
-                <p>
-                    Hello Minnesota! <Link to="/about/">Learn about me &rarr;</Link>
-                </p>
-            </TextBox>
-        </ImageBackground>
-    );
+  return (
+    <ImageBackground Tag="section" fluid={image.sharp.fluid} fadeIn="soft">
+      <TextBox>
+        <h1>Frontend Masters + Gatsby &hearts;</h1>
+        <p>
+          Hello Minnesota! <Link to="/about/">Learn about me &rarr;</Link>
+        </p>
+      </TextBox>
+    </ImageBackground>
+  );
 };
 
 export default Hero;

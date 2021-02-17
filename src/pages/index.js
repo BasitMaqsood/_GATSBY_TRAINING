@@ -13,7 +13,7 @@ export default () => {
       <Hero />
       <Layout>
         <h1>Home</h1>
-        <p>Hello Basit Maqsood !</p>
+        <p>Hello Muhammad Basit Maqsood !</p>
         <ReadLink to="/about/">Learn about me &rarr;</ReadLink>
 
         <h2>Read my blog</h2>
